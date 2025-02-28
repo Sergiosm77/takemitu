@@ -44,4 +44,5 @@
 
 <h3>Notas</h3>
 <p>La aplicación está activa en la PlayStore.</p>
-<p>Se puede descargar desde: <a>https://play.google.com/store/apps/details?id=com.saraodigital.takemitu</a></p>
+[Visitar app en PlayStore](https://play.google.com/store/apps/details?id=com.saraodigital.takemitu)
+
