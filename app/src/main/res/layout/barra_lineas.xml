@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icono_notas"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@android:drawable/presence_away" />
+
+            <ImageView
+                android:id="@+id/icono_cerca"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@android:drawable/presence_online" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/cajabus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    style="@style/icono"
+                    app:srcCompat="@drawable/bustop_blanco" />
+
+                <TextView
+                    android:id="@+id/num_linea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:textColor="@color/colorBlanco"
+                    android:text="10"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/sentido_linea"
+            android:textColor="@color/colorBlanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:text=""
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

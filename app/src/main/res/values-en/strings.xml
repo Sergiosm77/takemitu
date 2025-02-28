@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Takemitu Logroño</string>
+    <string name="miUbi">My location</string>
+    <string name="activagps">Set GPS on for greater accuracy</string>
+    <string name="aceptar">Ok</string>
+    <string name="cancelar">Cancel</string>
+    <string name="cambiar">Change</string>
+    <string name="salirAPP">Touch again to exit</string>
+    <string name="error_origen">Source address not found, try another address</string>
+    <string name="error_destino">Destination address not found, try another address</string>
+    <string name="metros">meters</string>
+    <string name="error_conexion">No Internet connection</string>
+    <string name="origen">Start</string>
+    <string name="destino">End</string>
+    <string name="buscar">Search route</string>
+    <string name="botonIr">GO</string>
+    <string name="cambiadia">Change the day</string>
+    <string name="hoy">Today</string>
+
+    <string name="viernes">Friday</string>
+    <string name="sabado">Saturday</string>
+    <string name="laborable">Workable</string>
+    <string name="festivo">Festive</string>
+    <string name="hoy_es">Today is</string>
+    <string name="buscar_en">Search on</string>
+    <string name="fuera_hora">Out of time</string>
+    <string name="proximo">Next at</string>
+
+    <string name="sinsitios">There is no sites</string>
+    <string name="sitionuevo">Do you want to suggest a new one?</string>
+
+    <string name="calculaRuta">Calculate route</string>
+    <string name="infodelinea">Stops</string>
+
+    <string name="errorbbdd"><![CDATA[<b>Cannot access the database</b><br><br>Please check your connection or try again later please</b>]]></string>
+    <string name="haynuevaversion"><![CDATA[<b>A new version is available</b><br><br>Would you like to update now?</b>]]></string>
+
+    <string name="sin_internet">NO INTERNET</string>
+    <string name="sin_gps">No GPS</string>
+    <string name="elija_donde">CHOOSE SAVED DESTINATION</string>
+    <string name="activa_gps">Turn on GPS to continue</string>
+
+    <string name="intro_origen">SET ORIGIN</string>
+    <string name="intro_destino">SET DESTINATION</string>
+
+    <string name="buscando_gps">Looking for your location, search again in a few seconds</string>
+    <string name="buscando_calle">Looking for address, please wait</string>
+    <string name="no_encuentro">I can not find this address, try another</string>
+
+    <string name="nombre_via">road name</string>
+    <string name="numero_via">number</string>
+
+    <string name="horaActual">Current time</string>
+
+    <string name="a_pie">Walk</string>
+    <string name="hasta">to:</string>
+    <string name="mapa">Map</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="linea">Line</string>
+    <string name="direccion">Direction</string>
+
+    <string name="subeLinea">Take</string>
+    <string name="parada">Station</string>
+    <string name="bajaLinea">Get off at:</string>
+    <string name="minutos">minutes</string>
+    <string name="pasaEn">It arrives in about</string>
+
+    <string name="buscaruta">Search route</string>
+    <string name="ruta1">Route 1</string>
+    <string name="ruta2">Route 2</string>
+    <string name="ruta3">Route 3</string>
+    <string name="selechora">Change departure time</string>
+    <string name="busqanteriores">Previous destinations</string>
+    <string name="salirahora">Go now</string>
+    <string name="saliralas">Go at</string>
+    <string name="nohaylinea">There is no line available. You are out of time or too far from a stop.</string>
+    <string name="estasA">at</string>
+    <string name="sentido">To</string>
+    <string name="lineas">Lines</string>
+    <string name="ubicacionahora">Actual location</string>
+    <string name="iniciolinea"> - Line start</string>
+    <string name="finlinea"> - End line</string>
+    <string name="seleccionadonde">Select where you want to go</string>
+    <string name="info_tu_ruta">Would you like to add an interesting destination? Get in touch and leave us your proposal.</string>
+    <string name="seleccionalinea">Lines</string>
+    <string name="sobrelas">Ir arrives about</string>
+    <string name="intervalo">Interval</string>
+    <string name="dias">days</string>
+    <string name="actualizar">Update now</string>
+    <string name="continuar">Continue</string>
+    <string name="salir">Exit</string>
+    <string name="comparte_subject">I recommend you Takemitu, an app to calculate bus routes in Logroño</string>
+    <string name="comparte_mensaje">Calculate bus routes with Takemitu:</string>
+    <string name="comparte_via">Share by</string>
+    <string name="total_a_pie">Total walk:</string>
+
+    <string name="info2"><![CDATA[<b>This is a BETA version</b>, it is necessary to update it now, please]]></string>
+    <string name="info3">It will be necessary to update this version in</string>
+    <string name="info5">You have the latest version</string>
+    <string name="info6">There is an update - click to go to Play Store</string>
+    <string name="info7">Could not verify</string>
+
+    <string name="info11"><![CDATA[<b>Welcome to Takemitu</b><br><br>Please click on the information icon at the top right to read important notes about this version.]]></string>
+
+    <string name="linea_cerca">Line near you</string>
+    <string name="linea_alerta">Alert on the line</string>
+
+</resources>

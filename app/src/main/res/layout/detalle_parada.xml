@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/contenedor_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iconoparada"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                app:srcCompat="@drawable/bus2" />
+
+            <TextView
+                android:id="@+id/notaparada1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorNegro"
+                android:textSize="16sp"
+                android:text="asdasfsdfsdfsdfsdfsd"/>
+
+            <TextView
+                android:id="@+id/notaparada2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorVerde"
+                android:textSize="12sp"
+                android:text="sdafdfsdfdsfsd"/>
+
+
+            <TextView
+                android:id="@+id/bus_siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorVerde"
+                android:textSize="14sp"
+                android:text="pasa a las"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/irparada"
+                    style="@style/boton_pequeno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/botonIr"/>
+
+                <Button
+                    android:id="@+id/irmapa"
+                    style="@style/boton_pequeno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mapa"/>
+                <Button
+                    android:id="@+id/cancela_parada"
+                    style="@style/boton_pequeno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancelar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+</LinearLayout>

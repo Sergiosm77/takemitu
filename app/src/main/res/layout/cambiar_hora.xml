@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contenedor_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/uva1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/rioja_amarillo"
+                android:text="@string/selechora"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fadingEdge="horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hora_mas"
+                        style="@style/boton_pequeno2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textSize="@dimen/textoGrande"
+                        android:text="+"/>
+
+                    <TextView
+                        android:id="@+id/hora_menos"
+                        style="@style/boton_pequeno2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="@dimen/textoGrande"
+                        android:text="-" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/horaCambiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:text="00"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/rioja_amarillo"
+                    android:textSize="@dimen/max" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/rioja_amarillo"
+                    android:textSize="@dimen/max"/>
+
+                <TextView
+                    android:id="@+id/minCambiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="00"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/rioja_amarillo"
+                    android:textSize="@dimen/max" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/min_mas"
+                        style="@style/boton_pequeno2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="+"
+                        android:textSize="@dimen/textoGrande" />
+
+                    <TextView
+                        android:id="@+id/min_menos"
+                        style="@style/boton_pequeno2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:textColor="@color/colorBlanco"
+                        android:text="-"
+                        android:textSize="@dimen/textoGrande"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

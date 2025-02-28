@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.saraodigital.takemitu.Buscador"
+        tools:layout="@layout/fragment_buscador" >
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_menu"
+            app:destination="@id/nav_menu"
+            />
+        <action
+            android:id="@+id/action_nav_home_to_nav_info"
+            app:destination="@id/nav_info"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_lineas"
+            app:destination="@id/nav_lineas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.saraodigital.takemitu.MenuSitios">
+        <action
+            android:id="@+id/action_nav_menu_to_nav_cargasitio"
+            app:destination="@id/nav_cargasitio"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lineas"
+        android:name="com.saraodigital.takemitu.Paradas"
+        tools:layout="@layout/fragment_paradas"
+        >
+        <action
+            android:id="@+id/action_nav_lineas_to_nav_listaparadas"
+            app:destination="@id/nav_listaparadas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cargasitio"
+
+        android:name="com.saraodigital.takemitu.Sitios2"
+        tools:layout="@layout/fragment_sitios2"
+        >
+        <action
+            android:id="@+id/action_nav_gallery_to_quesitio"
+            app:destination="@id/nav_quesitio"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+             />
+    </fragment>
+
+    <action
+        android:id="@+id/action_nav_gallery_to_home"
+        app:popUpTo="@id/nav_home"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        />
+
+    <fragment
+        android:id="@+id/nav_listaparadas"
+
+        android:name="com.saraodigital.takemitu.ListaParadas"
+        tools:layout="@layout/fragment_lista_paradas">
+    <action
+        android:id="@+id/action_nav_listaparadas_to_home"
+        app:popUpTo="@id/nav_home"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info"
+
+        android:name="com.saraodigital.takemitu.Informacion"
+        tools:layout="@layout/fragment_informacion"
+        />
+    <fragment
+        android:id="@+id/nav_quesitio"
+
+        android:name="com.saraodigital.takemitu.DescribeSitio"
+        tools:layout="@layout/fragment_sitioelegido"
+        >
+    <action
+        android:id="@+id/action_nav_quesitio_to_home"
+        app:popUpTo="@id/nav_home"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        />
+    </fragment>
+
+
+</navigation>

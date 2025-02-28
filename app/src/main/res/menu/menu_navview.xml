@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/barra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <item
+            android:id="@+id/ve_a_compartir"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="compartir"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/ve_a_info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Información"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/ve_a_nuevolugar"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Añadir lugar"
+            app:showAsAction="ifRoom" />
+<!--
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/walk"
+            android:title="Seccion2"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@drawable/walk"
+            android:title="Seccion3"/>
+
+-->
+    <!--
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="OTRAS OPCIONES">
+        <menu>
+            <item
+                android:id="@+id/menu_opcion_1"
+                android:icon="@drawable/stop"
+                android:title="Opcion1"/>
+            <item
+                android:id="@+id/menu_opcion_2"
+                android:icon="@drawable/stop"
+                android:title="Opcion2"/>
+        </menu>
+    </item>
+    -->
+</menu>

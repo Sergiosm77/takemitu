@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tak_back01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MapsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/titulomapas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iconobus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/titulo_mapa_lineas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0"
+            android:textColor="@color/colorBlanco"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titulo_mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/caja_lineas"
+            style="@style/linea_negra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/nombre_linea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/nombre_linea2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#FF00FF" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titulomapas" />
+
+    <Button
+        android:id="@+id/ruta1mapa"
+        style="@style/boton_pequeno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/ruta2mapa"
+        style="@style/boton_pequeno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@id/ruta1mapa" />
+
+    <Button
+        android:id="@+id/ruta3mapa"
+        style="@style/boton_pequeno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@id/ruta2mapa" />
+
+</RelativeLayout>

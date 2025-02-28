@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tak_back01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Rutas">
+
+    <TextView
+        android:id="@+id/describe_ruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/colorNegro"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_rutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/pantalla"
+            style="@style/texto_ruta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/max"
+            android:paddingBottom="@dimen/max">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNegro"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ruta1"
+            style="@style/boton_pequeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/ruta1" />
+
+        <Button
+            android:id="@+id/ruta2"
+            style="@style/boton_pequeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/ruta2" />
+
+        <Button
+            android:id="@+id/ruta3"
+            style="@style/boton_pequeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/ruta3"/>
+
+        <Button
+            style="@style/boton"
+            android:onClick="mapa"
+            android:text="@string/mapa" />
+    </LinearLayout>
+
+</LinearLayout>

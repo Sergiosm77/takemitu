@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaParadas">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sentido_inverso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:backgroundTint="@color/uva1"
+        android:src="@android:drawable/stat_notify_sync_noanim" />
+
+    <Button
+        style="@style/boton"
+        android:text="@string/mapa"
+        android:id="@+id/verLineaMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/listado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNegro"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreLinea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/uva2"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text=""
+                android:textColor="@color/colorBlanco"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/horarioLaboral"
+                style="@style/detalle_lineas"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAmarillo"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/horarioSabados"
+                style="@style/detalle_lineas"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAmarillo"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/horarioFestivos"
+                style="@style/detalle_lineas"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAmarillo"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/notasLinea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/uva3"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text=""
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_paradas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tak_back01"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/pantalla_paradas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp">
+
+            </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

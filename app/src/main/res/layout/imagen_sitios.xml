@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/icono_sitios"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:focusable="auto"
+        android:scaleType="centerCrop"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:src="@drawable/mapa_general" />
+
+    <LinearLayout
+        android:id="@+id/caja_dissitios"
+        style="@style/linea_gris_fondo_negro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_weight="0"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/descr_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="Textgf gdfggdf"
+            android:textColor="#F3F3F3"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/imagenmenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nombremenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco"
+            android:textSize="@dimen/_30sdp"
+            android:text="hklhl hiil uljlj"
+            android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorNegro"
+    tools:context=".ContenedorInicio"
+    android:animateLayoutChanges="true"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorNegro"
+        android:elevation="@dimen/_5sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@color/uva3"
+        app:title="@string/buscaruta"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/content_frame"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/navegacion"
+        />
+
+</LinearLayout>

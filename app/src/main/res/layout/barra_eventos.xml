@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_5sdp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/queevento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagen_evento"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="match_parent"
+                android:focusable="auto"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorNegro"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombre_evento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlanco"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="nombre"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#332D45"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:maxLines="5"
+                        android:minLines="2"
+                        android:textColor="@color/colorBlanco"
+                        android:text="descripcion"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#5F547E"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_weight=".30"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/colorBlanco"
+                        android:text="fecha"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight=".70"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/colorBlanco"
+                        android:text="hora"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#5F547E"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_weight=".30"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/colorBlanco"
+                        android:text="direccion"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/es_activo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight=".70"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/colorBlanco"
+                        android:text="Activo"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
