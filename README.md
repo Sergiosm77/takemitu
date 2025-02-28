@@ -27,15 +27,16 @@
 
 <h3>Capturas de pantalla de la aplicación</h3>
 
-<img src="app/screenshots/01-principal.jpg" style="max-height: 300px">
-<img src="app/screenshots/02-sitios.jpg" style="max-height: 300px">
-<img src="app/screenshots/03-lineas.jpg" style="max-height: 300px">
-<img src="app/screenshots/04-lineas2.jpg" style="max-height: 300px">
-<img src="app/screenshots/05-lineas3.jpg" style="max-height: 300px">
-<img src="app/screenshots/06-ruta1.jpg" style="max-height: 300px">
-<img src="app/screenshots/07-ruta2.jpg" style="max-height: 300px">
-<img src="app/screenshots/08-direcciones.jpg" style="max-height: 300px">
-<img src="app/screenshots/09-hora.jpg" style="max-height: 300px">
+
+![Pantalla 1](app/screenshots/01-principal.jpg)
+![Pantalla 2](app/screenshots/02-sitios.jpg)
+![Pantalla 3](app/screenshots/03-lineas.jpg)
+![Pantalla 4](app/screenshots/04-lineas2.jpg)
+![Pantalla 5](app/screenshots/05-lineas3.jpg)
+![Pantalla 6](app/screenshots/06-ruta1.jpg)
+![Pantalla 7](app/screenshots/07-ruta2.jpg)
+![Pantalla 8](app/screenshots/08-direcciones.jpg)
+![Pantalla 9](app/screenshots/09-hora.jpg)
 
 
 <h3>Autoría</h3>
